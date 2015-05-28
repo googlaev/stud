@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIG>
+  <grid version="3">
+    <saveoptions create="False" content="True" position="False"/>
+    <content>
+      <cells cellcount="6">
+        <cell1 row="0" text="предмет " column="1"/>
+        <cell2 row="1" text="fg" column="1"/>
+        <cell3 row="0" text="оценка" column="2"/>
+        <cell4 row="1" text="dfg" column="2"/>
+        <cell5 row="0" text="оценка" column="3"/>
+        <cell6 row="1" text="nfgn" column="3"/>
+      </cells>
+    </content>
+  </grid>
+</CONFIG>

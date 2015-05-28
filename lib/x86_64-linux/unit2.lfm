@@ -1,0 +1,34 @@
+object Form2: TForm2
+  Left = 952
+  Height = 381
+  Top = 409
+  Width = 521
+  ActiveControl = Memo1
+  Caption = 'Form2'
+  ClientHeight = 381
+  ClientWidth = 521
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 362
+    Top = 8
+    Width = 120
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    OnStartDrag = Memo1StartDrag
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 424
+    Height = 25
+    Top = 344
+    Width = 75
+    Cancel = True
+    Caption = 'ок'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end

@@ -1,0 +1,133 @@
+object Form1: TForm1
+  Left = 608
+  Height = 653
+  Top = 234
+  Width = 807
+  ActiveControl = Edit1
+  Caption = 'Form1'
+  ClientHeight = 653
+  ClientWidth = 807
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object ListBox1: TListBox
+    Left = 8
+    Height = 544
+    Top = 24
+    Width = 144
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    OnDblClick = ListBox1DblClick
+    ScrollWidth = 142
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object ListBox2: TListBox
+    Left = 168
+    Height = 504
+    Top = 64
+    Width = 152
+    ItemHeight = 0
+    OnClick = ListBox2Click
+    ScrollWidth = 150
+    TabOrder = 1
+    TopIndex = -1
+  end
+  object Edit1: TEdit
+    Left = 168
+    Height = 27
+    Top = 24
+    Width = 152
+    OnChange = Edit1Change
+    TabOrder = 2
+    Text = 'Поиск'
+  end
+  object Button1: TButton
+    Left = 328
+    Height = 25
+    Top = 24
+    Width = 59
+    Caption = 'поиск'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object StringGrid1: TStringGrid
+    Left = 392
+    Height = 544
+    Top = 24
+    Width = 336
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    TabOrder = 4
+    ColWidths = (
+      70
+      72
+      76
+      64
+      0
+    )
+    Cells = (
+      3
+      1
+      0
+      'предмет '
+      2
+      0
+      'оценка'
+      3
+      0
+      'оценка'
+    )
+  end
+  object Button2: TButton
+    Left = 677
+    Height = 25
+    Top = 584
+    Width = 107
+    Caption = 'сохранить'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 18
+    Top = 0
+    Width = 53
+    Caption = 'Группы'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 172
+    Height = 18
+    Top = 0
+    Width = 70
+    Caption = 'Студенты'
+    ParentColor = False
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 25
+    Top = 576
+    Width = 144
+    Caption = 'Редактировать'
+    OnClick = Button3Click
+    TabOrder = 6
+  end
+  object Button4: TButton
+    Left = 168
+    Height = 25
+    Top = 576
+    Width = 152
+    Caption = 'Редактировать'
+    OnClick = Button4Click
+    TabOrder = 7
+  end
+  object Button5: TButton
+    Left = 328
+    Height = 25
+    Top = 72
+    Width = 59
+    Caption = 'обн'
+    OnClick = Button5Click
+    TabOrder = 8
+  end
+end

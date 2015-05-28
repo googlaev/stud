@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIG>
+  <grid version="3">
+    <saveoptions create="False" content="True" position="False"/>
+    <content>
+      <cells cellcount="3">
+        <cell1 row="1" text="fghng" column="1"/>
+        <cell2 row="1" text="fghn" column="2"/>
+        <cell3 row="1" text="fghn" column="3"/>
+      </cells>
+    </content>
+  </grid>
+</CONFIG>

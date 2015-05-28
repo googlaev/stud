@@ -1,0 +1,29 @@
+object Form3: TForm3
+  Left = 871
+  Height = 495
+  Top = 237
+  Width = 565
+  Caption = 'Form3'
+  ClientHeight = 495
+  ClientWidth = 565
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 472
+    Top = 8
+    Width = 248
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 472
+    Height = 25
+    Top = 456
+    Width = 75
+    Caption = 'ок'
+    TabOrder = 1
+  end
+end
