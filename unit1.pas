@@ -52,29 +52,37 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 
-var    id: array [0..9999] of integer;
+var    id: array [0..9999] of string;
        q,k,j,i: integer;
-       s: string;
+      z, s: string;
+
 begin
 //Memo1.Clear;
 j := 0;
-//if Length(Edit1.Text) <> 0 then begin
+//if Length(Edit1.Text) <> 0 then begin   Length(S)   Copy(Source, 3, 4);
 
         for i:= 0 to ListBox2.Items.Count-1 do begin
-          q := Pos(ListBox2.Items.Strings[i], Edit1.Text);
-            if q = 0 then
+
+          z := Copy(ListBox2.Items.Strings[i],0,Length( Edit1.Text));
+            if z = Edit1.Text then
                                                           begin
-                                                           //s:= s + '!'+  IntToStr(q)+' ' +ListBox2.Items.Strings[i];
-                                                             ListBox2.Items.Delete(i);
-                                                           // id[j]:=i;
-                                                         // j := j+1;
-                                                          //s := s + IntToStr(i)+  ;
+
+                                                            //s:= s + '!' +ListBox2.Items.Strings[i];
+                                                            // ListBox2.Items.Delete(i);
+                                                            id[j]:=ListBox2.Items.Strings[i];
+                                                            j := j+1;
+                                                         // s := s + IntToStr(i)+  ;
                                                          // ListBox2.Items.Delete(i);
-                                                          end;
+                                                          end
+            //else    ListBox2.Items.Delete(id[i]);
 
         end;
+        ListBox2.Clear;
+        for k:=0 to j do begin
+            ListBox2.Items.Add(id[k]);
 
-    ShowMessage (s);
+        end;
+        //ShowMessage (s);
 
 end;
 
