@@ -3,18 +3,19 @@
   <grid version="3">
     <saveoptions create="False" content="True" position="False"/>
     <content>
-      <cells cellcount="11">
+      <cells cellcount="12">
         <cell1 row="0" text="предмет " column="1"/>
-        <cell2 row="1" text="dnd" column="1"/>
-        <cell3 row="2" text="апрт" column="1"/>
-        <cell4 row="3" text="dfb" column="1"/>
+        <cell2 row="1" text="математика" column="1"/>
+        <cell3 row="2" text="рус. яз." column="1"/>
+        <cell4 row="3" text="физ-ра" column="1"/>
         <cell5 row="0" text="оценка" column="2"/>
-        <cell6 row="1" text="fgnf" column="2"/>
-        <cell7 row="2" text="апрт" column="2"/>
-        <cell8 row="3" text="fbd" column="2"/>
+        <cell6 row="1" text="5" column="2"/>
+        <cell7 row="2" text="3" column="2"/>
+        <cell8 row="3" text="5" column="2"/>
         <cell9 row="0" text="оценка" column="3"/>
-        <cell10 row="1" text="dfgn" column="3"/>
-        <cell11 row="2" text="апрт" column="3"/>
+        <cell10 row="1" text="5" column="3"/>
+        <cell11 row="2" text="4" column="3"/>
+        <cell12 row="3" text="5" column="3"/>
       </cells>
     </content>
   </grid>
