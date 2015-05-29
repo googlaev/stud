@@ -96,9 +96,18 @@ end;
 procedure TForm1.Button4Click(Sender: TObject);
 var a:string;
 begin
-   a :='./list_grup/'+Form1.ListBox1.Items[ListBox1.ItemIndex]+'.txt';
-   form3.Memo1.Lines.LoadFromFile(a);
+  try
+  a :='./list_grup/'+Form1.ListBox1.Items[ListBox1.ItemIndex]+'.txt';
+  form3.Memo1.Lines.LoadFromFile(a);
+  Form3.Show;
+
+   except
+   ShowMessage ('не заполнен');
    Form3.Show;
+end;
+
+
+
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
@@ -155,9 +164,21 @@ procedure TForm1.ListBox2Click(Sender: TObject);
 
  var a:String;
 begin
-   //StringGrid1.Clean();
+  try
    a:='./student/'+ListBox2.Items[ListBox2.ItemIndex]+'.xml';
    StringGrid1.LoadFromFile(a);
+
+
+   except
+   ShowMessage ('еще не создан');
+end;
+
+
+
+
+  //StringGrid1.Clean();
+   //a:='./student/'+ListBox2.Items[ListBox2.ItemIndex]+'.xml';
+   //StringGrid1.LoadFromFile(a);
    //ShowMessage (a);
 end;
 

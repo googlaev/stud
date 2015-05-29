@@ -64,8 +64,8 @@ j := 0;
           q := Pos(ListBox2.Items.Strings[i], Edit1.Text);
             if q = 0 then
                                                           begin
-                                                           s:= s + '!'+  IntToStr(q)+' ' +ListBox2.Items.Strings[i];
-                                                            // ListBox2.Items.Delete(i);
+                                                           //s:= s + '!'+  IntToStr(q)+' ' +ListBox2.Items.Strings[i];
+                                                             ListBox2.Items.Delete(i);
                                                            // id[j]:=i;
                                                          // j := j+1;
                                                           //s := s + IntToStr(i)+  ;
@@ -96,9 +96,18 @@ end;
 procedure TForm1.Button4Click(Sender: TObject);
 var a:string;
 begin
-   a :='./list_grup/'+Form1.ListBox1.Items[ListBox1.ItemIndex]+'.txt';
-   form3.Memo1.Lines.LoadFromFile(a);
+  try
+  a :='./list_grup/'+Form1.ListBox1.Items[ListBox1.ItemIndex]+'.txt';
+  form3.Memo1.Lines.LoadFromFile(a);
+  Form3.Show;
+
+   except
+   ShowMessage ('не заполнен');
    Form3.Show;
+end;
+
+
+
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
